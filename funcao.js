@@ -1,4 +1,7 @@
-for (i = 0; i < 1; i++) {
+function ready() {
+    var sorteio = 0, i;
+
+    for (i = 0; i < 1; i++) {
         if (document.getElementById("btn-pedra").checked == false && document.getElementById("btn-papel").checked == false && document.getElementById("btn-tesoura").checked == false) {
             alert("Selecione uma opção!");
         } else {
@@ -15,6 +18,7 @@ for (i = 0; i < 1; i++) {
                     document.getElementById("computador").src = "Imagens/pc-tesoura.png";
                     break;
             }
+
             if ((document.getElementById("btn-pedra").checked == true && sorteio == 0) || (document.getElementById("btn-papel").checked == true && sorteio == 1) || (document.getElementById("btn-tesoura").checked == true && sorteio == 2)) {
                 document.getElementById("winner").innerHTML = "EMPATE!";
                 empatou++;
@@ -31,6 +35,7 @@ for (i = 0; i < 1; i++) {
     document.querySelector("#pontuacaoComputador").innerText = pontosComputador;
     document.querySelector("#empateJKP").innerText = empatou;
 }
+
 
 function resetar() {
     document.getElementById("computador").src = "Imagens/pc-vazio.png";
