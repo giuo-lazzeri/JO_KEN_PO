@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jokenStyle.css">
+    <title>JokenPo</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>JOKENPÔ</h1>
+            <h2>JOGADOR</h2>
+            <form name="frmJokenpo">
+                <div class="jkp-img">
+                    <input type="radio" name="group" id="btn-pedra" value="vlPedra"><img src="Imagens/pedra.png"
+                        id="pedra">
+                    <input type="radio" name="group" id="btn-papel" value="vlPapel"><img src="Imagens/papel.png"
+                        id="papel">
+                    <input type="radio" name="group" id="btn-tesoura" value="vlTesoura"><img src="Imagens/tesoura.png"
+                        id="tesoura">
+                </div>
+                <div id="inputs">
+                    <p>
+                        <input type="button" value="COMEÇAR" onclick="ready()" id="btn-comecar">
+                        <input type="reset" value="RESETAR" onclick="resetar()" id="btn-reset">
+                    </p>
+            </form>
+        </div>
+        <div class="pc-computador">
+            <h3 id="cpu">Computador</h3>
+            <img src="Imagens/pc-vazio.png" id="computador">
+            <h2 id="winner"></h2>
+        </div>
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="funcao.js"></script>
+</body>
+
+</html>

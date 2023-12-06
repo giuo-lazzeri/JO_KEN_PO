@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none
+}
+
+body {
+    font-family: 'Syne Mono', monospace;
+    font-size: 400;
+    width: 100%;
+    min-width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h3 {
+    margin: 5% 3% 0% 0%;
+}
+
+h2 {
+    margin-top: 5px;
+    
+}
+
+.container{
+    border: black solid;
+    border-radius: 20px;
+    background-color: aquamarine;
+    width: 330px;
+    height: 500px;
+    padding: 10%;
+    margin-top: 50px;
+}
+
+.btn-jkp{
+    display: flex;
+    justify-content:space-between;
+}
+
+.jkp-img {
+    margin-top: 15px;
+}
+
+#btn-comecar {
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+#btn-reset {
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 8% 0 1%;
+}
+
+#pedra{
+   width: 55px;
+   height: 55px;
+   padding: 1%;
+   padding-left: 1%;
+}
+
+
+#papel{
+    width: 55px;
+    height: 55px;
+    padding: 1%;
+ }
+
+#tesoura{
+    width: 55px;
+    height: 55px;
+    padding: 1%;
+ }
+
+#computador{
+    width: 150px;
+    margin-top: 30px;
+}
+
+
