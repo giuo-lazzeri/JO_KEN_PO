@@ -10,9 +10,12 @@
 
 <body>
     <main>
+        <p>Jogador <span id="jogadorNameScore"></span>: <span id="pontuacaoUsuario"> 0</span></p>
+        <p>Empate: <span id="empateJKP">0</span></p>
+        <p>Computador: <span id="pontuacaoComputador">0</span></p>
         <div class="container">
             <h1>JOKENPÔ</h1>
-            <h2>JOGADOR</h2>
+            <h2>JOGADOR: <span id="jogadorName"></span></h2>
             <form name="frmJokenpo">
                 <div class="jkp-img">
                     <input type="radio" name="group" id="btn-pedra" value="vlPedra"><img src="Imagens/pedra.png"
@@ -41,6 +44,14 @@
 
     </footer>
     <script src="funcao.js"></script>
+     <script>
+        var pontosUsuario = 0, pontosComputador = 0, empatou = 0, x;
+        x = prompt("Olá jogador, qual seu nome?");
+
+        ready();
+        resetar();
+        nomeJogador();
+    </script>
 </body>
 
 </html>
